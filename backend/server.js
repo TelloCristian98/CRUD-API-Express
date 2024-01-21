@@ -14,13 +14,13 @@ const PORT = 5000;
 app.use(cors());
 app.use(express.json());
 
-app.use("/", users);
+app.use("/users", users);
 
 io.on("connection", (socket) => {
-  console.log("Cliente WebSocket conectado");
+  console.log("WebSocket Client connected");
 
   socket.on("disconnect", () => {
-    console.log("Cliente WebSocket desconectado");
+    console.log("WebSocket Client desconnected");
   });
 });
 
