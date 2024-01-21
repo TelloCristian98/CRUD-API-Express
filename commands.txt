@@ -1,0 +1,32 @@
+Start a express server for the backend
+    npm init -y
+    npm install --save express
+    npm install --save-dev nodemon
+
+cors is a middleware package for Express.js that allows you to enable Cross-Origin Resource Sharing (CORS) with various options. CORS is a mechanism that allows many resources (e.g., fonts, JavaScript, etc.) on a web page to be requested from another domain outside the domain from which the resource originated. This is important because, without CORS, web pages would only be able to make requests to the same domain as the page itself.
+
+    npm install --save-dev cors 
+
+path is a built-in Node.js module that provides utilities for working with file and directory paths.
+fs is a built-in Node.js module that provides an API for interacting with the file system.
+http is a built-in Node.js module that provides an HTTP server and client.
+socket.io is a third-party Node.js module that enables real-time, bidirectional and event-based communication between the browser and the server.
+By importing these modules, you can use their functionality in your Node.js application. For example, you can use path to manipulate file paths, fs to read and write files, http to create an HTTP server, and socket.io to enable real-time communication between the client and server.
+
+    npm install --save-dev path 
+    npm install --save-dev fs
+    npm install --save-dev http
+    npm install --save-dev socket.io
+
+Start the project 
+    npm start
+
+## Frontend
+Start the frontend using Vite + React
+    
+    npm create vite@latest
+    cd frontend
+    npm install
+    npm run dev
+    npm install --save-dev socket.io-client
+    npm install --save-dev path
